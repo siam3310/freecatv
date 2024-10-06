@@ -1286,5 +1286,30 @@ input[type="checkbox"]{
   font-weight: 700;
 }
 </style>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDsMDQ03S44MMPsRqLmkoz3b7UuSJqFQyI",
+    authDomain: "freecatv-6dd04.firebaseapp.com",
+    projectId: "freecatv-6dd04",
+    storageBucket: "freecatv-6dd04.appspot.com",
+    messagingSenderId: "615479514832",
+    appId: "1:615479514832:web:4ee50f40881325361770d5",
+    measurementId: "G-HJY4EFT82Z"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
    </body>
 </html>
