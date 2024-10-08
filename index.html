@@ -1000,8 +1000,6 @@ box-shadow: 0 -6px 18px 0 rgba(9,32,76,.08); }
   
 </head>
 <body>
-<div id='preloader'></div>
-<div id='outer-wrapper'>
 <div class='bwrapsite-content' id='bwrapcontent'>
 <div class='content-area' id='primarybwrap'>
 <div class='bwrapsite-main' id='mainbwrap'>
@@ -1072,7 +1070,7 @@ $("#90ad").appendTo(".90ad");
 <div class='clear'></div>
 <script>
 //<![CDATA[
-$(window).load(function(){$("#loader").fadeOut(),$("#preloader").delay(10).fadeOut("slow"),$("body").delay(10).css({overflow:"visible"})});
+$(window).load(function(){$("#loader").fadeOut(),$("#preloader").delay(0).fadeOut("slow"),$("body").delay(0).css({overflow:"visible"})});
 $(function(){$(".separator:first").remove(),$(".post-body > img:first").remove()});
 $(".popular-posts ul li .item-snippet").each(function(){var t=$(this).text().substr(0,40),s=t.lastIndexOf(" ");s>32&&$(this).text(t.substr(0,s).replace(/[?,!\.-:;]*$/,"..."))});
 $("ul#related-summary li img").each(function(){$(this).attr("src",$(this).attr("src").replace('s72-c','s600'))});                                                               
