@@ -129,12 +129,11 @@
         let downloadLinks = '';
         downloadUrls.forEach((input, index) => {
             if (input.value.trim() !== '') {
-                downloadLinks += `* ## [Download Server ${index + 1} - GDrive server](${input.value.trim()})\n\n`;
+                downloadLinks += `* ## [Download Server ${index + 1} ](${input.value.trim()})\n\n`;
             }
         });
 
-        const postContent = `
----
+        const postContent = `---
 title: ${title}
 published: ${published}
 image: "${image}"
